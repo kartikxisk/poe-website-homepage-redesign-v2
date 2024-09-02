@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .no-scrollbar::-webkit-scrollbar,
+  .custom-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .custom-scrollbar:hover::-webkit-scrollbar {
+    display: block;
+    background-color: #dfdfdf;
+    width: 4px;
+    height: 4px;
+  }
+
+  .custom-scrollbar:hover::-webkit-scrollbar-thumb {
+    display: block;
+    background-color: #adadad;
+    width: 4px;
+    height: 4px;
+  }
+
+  body::-webkit-scrollbar {
+    display: block;
+    background-color: #dfdfdf;
+    width: 8px;
+    height: 8px;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    display: block;
+    background-color: #adadad;
+    width: 8px;
+    height: 8px;
+  }
+}
+
+
+.swiper-pagination .swiper-pagination-bullet {
+background: #ffffff;
+}
+
+.swiper-button-next::after,.swiper-button-prev::after {
+  color: #ffffff;
+  font-size: 20px !important;
+  font-weight: 900;
+}
